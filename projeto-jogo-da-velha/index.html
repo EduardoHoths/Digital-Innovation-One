@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>    
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="src/favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+    <div id="velha">
+        <h1>Jogo da velha</h1>
+        <div class="area">
+            <div id="1" onclick="areaJogavel(this.id)">-</div>
+            <div id="2" onclick="areaJogavel(this.id)">-</div>
+            <div id="3" onclick="areaJogavel(this.id)">-</div>
+        </div>
+        <div class="area">
+            <div id="4" onclick="areaJogavel(this.id)">-</div>
+            <div id="5" onclick="areaJogavel(this.id)">-</div>
+            <div id="6" onclick="areaJogavel(this.id)">-</div>
+        </div>
+        <div class="area">
+            <div id="7" onclick="areaJogavel(this.id)">-</div>
+            <div id="8" onclick="areaJogavel(this.id)">-</div>
+            <div id="9" onclick="areaJogavel(this.id)">-</div>
+        </div>
+        <div>
+            <label for="">
+                Jogador:
+            </label>
+            <label for="" id="jogador-selecionado">
+            </label>
+        </div>
+        <div>
+            <label for="">
+                Vencedor:
+            </label>
+            <label for="" id="vencedor-selecionado">        
+            </label>
+        </div>
+        <div>
+            <button onclick="reiniciar()">Reiniciar</button>
+        </div>
+    </div>
+    <footer>
+        <p> Desenvolvido por <a href="https://linkedin.com/in/eduardohoths" target="_blank">Eduardo Hoths</a>&copy;</p>
+    </footer>
+    <script src="src/script.js"></script>
+</body>
+</html>

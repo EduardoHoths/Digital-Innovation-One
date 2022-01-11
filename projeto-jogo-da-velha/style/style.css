@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/*Formatações gerais*/
+:root {   
+    --corBotao: #08CC5D;
+    --corCaret: rgba(0, 0, 0, 0);
+    --fonte: 'Pacifico', cursive;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: linear-gradient(135deg, #099FD6, #02BFBF, #0864CC) fixed;
+    caret-color: var(--corCaret);
+    font: normal 1em var(--fonte);
+}
+
+h1{
+    margin: 30px;
+    
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited{
+    color: blue;
+}
+footer{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+/*Formatação da area do game*/
+
+#velha {
+    text-align: center;
+    margin-top: 2%;
+    
+}
+
+.area div {
+    display: inline-block;
+    background-color: #e1e1e1;
+    margin: 5px 2px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 3em;
+    color: #e1e1e1;
+    cursor: pointer;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.376);
+    caret-color: #e1e1e1;    
+}
+
+button {
+    background-color: var(--corBotao);
+    padding: 10px;
+    font: normal 1.5em var(--fonte);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+label {
+    font-size: 1.5em;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+/*Media Queries*/
+@media (max-width: 480px) {
+    .area div {
+        max-width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+    label, h1{
+        margin: 0;
+    }
+}
+@media(max-width: 330px){
+    .area div{
+        max-width: 90px;
+        height: 90px;
+        line-height: 90px;
+    }
+    label, h1{
+        margin: 0;
+    }
+    button{
+        font-size: 1.1em;
+        margin: 0;
+    }
+}
